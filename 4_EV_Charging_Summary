@@ -1,0 +1,70 @@
+🚗⚡ EV Charging Analytics Dashboard
+
+📌 Project Overview
+
+This project provides an end-to-end analysis of Electric Vehicle (EV) charging station data. The raw dataset was cleaned and enhanced in Excel, followed by the creation of an interactive Power BI dashboard. The goal is to analyze charging patterns, costs, utilization, and customer behavior to support better infrastructure planning.
+
+🗂️ Dataset
+
+Columns in raw dataset:
+
+Country, City, Charging Station ID, Charging Station Type
+
+EV Model, Manufacturer, Battery Capacity (kWh)
+
+Charging Start Time, Charging End Time, Charging Duration (mins)
+
+Energy Delivered (kWh), Charging Cost ($), Payment Method
+
+Temperature (°C), Charging Session Outcome, Station Utilization Rate (%)
+
+
+Feature Engineering (added in Excel):
+
+Charging Speed (kWh/min): Derived from Energy Delivered ÷ Charging Duration.
+
+Peak Period: Categorized charging sessions into Morning, Afternoon, Evening, Night.
+
+
+🔧 Data Preparation (Excel)
+
+Removed duplicates and handled missing values.
+
+Standardized date and time formats.
+
+Created new calculated columns (Charging Speed, Peak Period).
+
+Prepared clean structured tables for dashboard integration.
+
+
+📊 Dashboard Features (Power BI)
+
+KPIs: Total sessions, success rate, average energy delivered, battery capacity, average duration.
+
+Cost Analysis: Charging cost by city and by month.
+
+EV Insights: Sessions by EV model and manufacturer.
+
+Station Performance: Utilization by station type (Level 1, Level 2, DC Fast).
+
+Interactive Filters: Country, City, EV Model, Peak Period, Station ID, Month.
+
+
+🎯 Key Insights
+
+Berlin had the highest charging cost among all cities.
+
+March recorded peak charging costs, followed by a decline in April.
+
+Porsche, Hyundai, and Nissan models had the most charging sessions.
+
+Level 2 stations were most utilized, followed by DC Fast.
+
+Peak usage occurred mostly in Evening hours, indicating customer preferences.
+
+
+🛠️ Tools & Technologies
+
+Excel → Data Cleaning, Transformation, Feature Engineering
+
+Power BI → Data Visualization & Interactive Dashboard
